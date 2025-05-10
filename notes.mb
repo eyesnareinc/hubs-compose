@@ -1,0 +1,6 @@
+DOMAIN=hubs.local
+#DOMAIN=localhost
+CERTS_SELF_SIGNED=false
+CERTS_PROVIDED=false
+USE_HTTPS=false
+PRIVATE_NETWORK_IP=127.0.0.1

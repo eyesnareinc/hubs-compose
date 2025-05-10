@@ -7,10 +7,19 @@ suffix='\033[0m\n'
 
 servicesdir=$basedir/services
 echo -e ${prefix}Cloning source repositories$suffix
-git clone https://github.com/Hubs-Foundation/reticulum.git "$servicesdir"/reticulum
-git clone https://github.com/Hubs-Foundation/dialog.git "$servicesdir"/dialog
-git clone https://github.com/Hubs-Foundation/hubs.git "$servicesdir"/hubs
-git clone https://github.com/Hubs-Foundation/Spoke.git "$servicesdir"/spoke
+git clone https://github.com/eyesnareinc/reticulum.git "$servicesdir"/reticulum
+git clone https://github.com/eyesnareinc/dialog.git "$servicesdir"/dialog
+#git clone https://github.com/eyesnareinc/hubs.git#aaa2685af9cd923d56d777e4473a976cc387f889 "$servicesdir"/hubs
+git clone https://github.com/eyesnareinc/hubs.git#behaviorgraphs "$servicesdir"/hubs #behaviorgraphs
+#git clone https://github.com/eyesnareinc/hubs.git "$servicesdir"/hubs 
+#git clone https://github.com/eyesnareinc/hubs.git#hubs-cloud "$servicesdir"/hubs 
+#git clone https://github.com/eyesnareinc/hubscloud_annyxr.git "$servicesdir"/hubs
+#git clone https://github.com/eyesnareinc/hubscloud.git#addons "$servicesdir"/hubs
+git clone https://github.com/eyesnareinc/Spoke.git#bcd86a6e82a67f247779359e6c076f0ce53d0eaf "$servicesdir"/spoke
+# git clone https://github.com/Hubs-Foundation/reticulum.git "$servicesdir"/reticulum
+# git clone https://github.com/Hubs-Foundation/dialog.git "$servicesdir"/dialog
+# git clone https://github.com/Hubs-Foundation/hubs.git "$servicesdir"/hubs
+# git clone https://github.com/Hubs-Foundation/Spoke.git "$servicesdir"/spoke
 
 composefile=$basedir/docker-compose.yml
 echo -e ${prefix}Initializing Reticulum$suffix &&
