@@ -11,8 +11,8 @@ git clone https://github.com/eyesnareinc/reticulum.git "$servicesdir"/reticulum
 # cd "$servicesdir"/reticulum
 # git checkout 2432320b8726973b853ed3e1db8b5d62909748c6
 git clone https://github.com/eyesnareinc/dialog.git "$servicesdir"/dialog
-# cd "$servicesdir"/dialog
-# git checkout ff56f10a54e3ab63f54af0515a99b4ddab346346
+cd "$servicesdir"/dialog
+git checkout ff56f10a54e3ab63f54af0515a99b4ddab346346
 # git clone https://github.com/eyesnareinc/hubs.git "$servicesdir"/hubs
 # cd "$servicesdir"/hubs
 # git checkout aaa2685af9cd923d56d777e4473a976cc387f889
@@ -20,15 +20,15 @@ git clone https://github.com/eyesnareinc/dialog.git "$servicesdir"/dialog
 # git clone https://github.com/eyesnareinc/hubs.git "$servicesdir"/hubs #behaviorgraphs
 # cd "$servicesdir"/hubs
 # git checkout 7b0764c0bfe9a52e16321f812cd1e916c7ee021f
-# git clone https://github.com/eyesnareinc/hubs.git "$servicesdir"/hubs #hubs-cloud
+# git clone https://github.com/eyesnareinc/hubs.git "$servicesdir"/hubs #hubs-cloudl
 # cd "$servicesdir"/hubs
 # git checkout aaa2685af9cd923d56d777e4473a976cc387f889
 git clone https://github.com/eyesnareinc/hubscloud_annyxr.git "$servicesdir"/hubs
 # git clone --branch addons https://github.com/eyesnareinc/hubscloud.git "$servicesdir"/hubs
-# git clone https://github.com/eyesnareinc/Spoke.git "$servicesdir"/spoke #current
-# cd "$servicesdir"/spoke
-# git checkout b33558af166d3d1883ebf924c04a5219604c2e55
-# git clone https://github.com/eyesnareinc/Spoke.git "$servicesdir"/spoke
+git clone https://github.com/eyesnareinc/Spoke.git "$servicesdir"/spoke #current
+cd "$servicesdir"/spoke
+git checkout b33558af166d3d1883ebf924c04a5219604c2e55
+# git clone --branch current https://github.com/eyesnareinc/Spoke.git "$servicesdir"/spoke
 # git clone https://github.com/Hubs-Foundation/reticulum.git "$servicesdir"/reticulum
 # git clone https://github.com/Hubs-Foundation/dialog.git "$servicesdir"/dialog
 # git clone https://github.com/Hubs-Foundation/hubs.git "$servicesdir"/hubs

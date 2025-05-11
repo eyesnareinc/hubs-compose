@@ -1,8 +1,0 @@
-services:
-  nginx:
-    volumes:
-      - ./certs/hubs.local.crt:/etc/ssl/certs/hubs.local.crt:ro
-      - ./certs/hubs.local.key:/etc/ssl/private/hubs.local.key:ro
-    environment:
-      SSL_CERT_PATH: /etc/ssl/certs/hubs.local.crt
-      SSL_KEY_PATH: /etc/ssl/private/hubs.local.key
