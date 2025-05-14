@@ -11,8 +11,8 @@ git clone https://github.com/eyesnareinc/reticulum.git "$servicesdir"/reticulum
 # cd "$servicesdir"/reticulum
 # git checkout 2432320b8726973b853ed3e1db8b5d62909748c6
 git clone https://github.com/eyesnareinc/dialog.git "$servicesdir"/dialog
-cd "$servicesdir"/dialog
-git checkout ff56f10a54e3ab63f54af0515a99b4ddab346346
+# cd "$servicesdir"/dialog
+# git checkout ff56f10a54e3ab63f54af0515a99b4ddab346346
 # git clone https://github.com/eyesnareinc/hubs.git "$servicesdir"/hubs
 # cd "$servicesdir"/hubs
 # git checkout aaa2685af9cd923d56d777e4473a976cc387f889
@@ -53,3 +53,5 @@ mutagen-compose -f "$composefile" run --rm spoke yarn install
 code=$?
 mutagen-compose down
 exit $code
+
+# Commented for safety now that everything is working

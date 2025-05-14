@@ -1,6 +1,8 @@
-#!/bin/bash
+!/bin/bash
 basedir=$(readlink -f "$(dirname "$0")"/..)
 
 mutagen-compose -f "$basedir"/docker-compose.yml down --volumes --rmi local &&
 rm -rf "$basedir"/services/reticulum/deps &&
 "$basedir"/bin/init
+
+# commented for safety now that I have a working version 

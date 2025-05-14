@@ -1,6 +1,52 @@
-DOMAIN=hubs.local
-#DOMAIN=localhost
+#DOMAIN=hubs.local
+DOMAIN=localhost
 CERTS_SELF_SIGNED=false
 CERTS_PROVIDED=false
 USE_HTTPS=false
 PRIVATE_NETWORK_IP=127.0.0.1
+PROTOCOL=https
+#RETICULUM_URL=https://localhost:4000
+#RETICULUM_URL=https://host.docker.internal:4000
+HUBS_SERVER=https://hubs.local:8080
+RETICULUM_SERVER=https://hubs.local:4000
+
+# Run through all certs to get everything working
+
+--ignore-certificate-errors
+
+https://localhost:4000
+https://hubs.local:8080
+hubs://hubs.local:9090
+
+Use chrome browser
+
+#thisisnotsafe
+
+C:\Program Files\Google\Chrome\Application\chrome.exe --disable-web-security --user-data-dir="C:\temp\chrome"
+chrome.exe --disable-web-security --user-data-dir="C:\temp\chrome" http://localhost:9090
+
+"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe" --disable-web-security --user-data-dir="C:/temp/chrome"
+
+"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe" --disable-web-security --user-data-dir="C:/temp/chrome" https://localhost:4000
+
+"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe" --disable-web-security --user-data-dir="C:/temp/chrome" https://hubs.local:8080
+"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe" --disable-web-security --user-data-dir="C:/temp/chrome" https://hubs.local:9090
+
+Add to bash script
+./open-insecure-chrome.sh
+
+"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe" \
+  --disable-web-security \
+  --user-data-dir="C:/temp/chrome" \
+  --disable-features=IsolateOrigins,site-per-process \
+  --ignore-certificate-errors \
+  https://localhost:9090 https://hubs.local:9090
+
+## USE THIS ONE
+"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe" \
+  --disable-web-security \
+  --user-data-dir="C:/temp/chrome" \
+  --disk-cache-dir="C:/temp/chrome/cache" \
+  https://localhost:4000 https://hubs.local:4000 
+
+  
