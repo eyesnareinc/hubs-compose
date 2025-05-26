@@ -70,7 +70,7 @@ export default CastNCarry;
   --disable-web-security \
   --user-data-dir="C:/temp/chrome" \
   --disk-cache-dir="C:/temp/chrome/cache" \
-  https://localhost:4000 https://hubs.local:4000
+  https://localhost:4000 https://hubs.local:4000 https://hubs-proxy.local:4000
 
 "/mnt/c/Program Files/Google/Chrome/Application/chrome.exe" \
   --disable-web-security \
@@ -79,4 +79,5 @@ export default CastNCarry;
   --ignore-certificate-errors \
   https://hubs.local:9090 
        
-       
+
+
