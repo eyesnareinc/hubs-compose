@@ -35,18 +35,48 @@ chrome.exe --disable-web-security --user-data-dir="C:\temp\chrome" http://localh
 Add to bash script
 ./open-insecure-chrome.sh
 
-"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe" \
-  --disable-web-security \
-  --user-data-dir="C:/temp/chrome" \
-  --disable-features=IsolateOrigins,site-per-process \
-  --ignore-certificate-errors \
-  https://localhost:9090 https://hubs.local:9090
+  class CastNCarry extends Component {
+  componentDidMount() {
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = "https://player.dacast.com/js/player.js?contentId=1234";
+    this.div.appendChild(script);
+  }
+  render() {
+    return (
+      <div className="CastNCarry" ref={el => (this.div = el)}>
+        <div className="CastWrapper">        
+          <script id="1234" 
+            width="100%"
+            //height="100%"
+            //width="640"
+            //height="360"
+            //width="1280" 
+            height="720" 
+            //width="1024" 
+            //height="576" 
+            src="https://player.dacast.com/js/player.js?contentId=1234"  
+            class="cnc-saas-vid">
+          </script>       
+        </div>  
+      </div>
+    );
+  }
+}
+export default CastNCarry;
 
 ## USE THIS ONE
 "/mnt/c/Program Files/Google/Chrome/Application/chrome.exe" \
   --disable-web-security \
   --user-data-dir="C:/temp/chrome" \
   --disk-cache-dir="C:/temp/chrome/cache" \
-  https://localhost:4000 https://hubs.local:4000 
+  https://localhost:4000 https://hubs.local:4000
 
-  
+"/mnt/c/Program Files/Google/Chrome/Application/chrome.exe" \
+  --disable-web-security \
+  --user-data-dir="C:/temp/chrome" \
+  --disable-features=IsolateOrigins,site-per-process \
+  --ignore-certificate-errors \
+  https://hubs.local:9090 
+       
+       
